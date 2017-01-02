@@ -1,5 +1,8 @@
 import fetch from 'node-fetch';
 
+import {parseEnvironmentVariables} from './parse-envs';
+parseEnvironmentVariables();
+
 const STATIONS_URL = 'http://powietrze.gios.gov.pl/pjp/rest/station/findAll';
 const SENSORS_URL = 'http://powietrze.gios.gov.pl/pjp/rest/station/sensors/';
 const READINGS_URL = 'http://powietrze.gios.gov.pl/pjp/rest/data/getData/';
