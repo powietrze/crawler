@@ -13,7 +13,6 @@ export const createDb = (connection, dbName) => rethink.dbCreate(dbName)
     }
   });
 
-
 export const createTable = (connection, dbName, tableName) => rethink
   .db(dbName)
   .tableCreate(tableName)
@@ -24,8 +23,8 @@ export const createTable = (connection, dbName, tableName) => rethink
     }
   });
 
-export const insert = (connection, dbName, tableName, data) => rethink
+export const insert = (connection, dbName, tableName, data, options = {}) => rethink
   .db(dbName)
   .table(tableName)
-  .insert(data)
+  .insert(data, options)
   .run(connection);

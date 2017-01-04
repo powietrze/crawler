@@ -11,6 +11,7 @@
     "babel-preset-es2017": "6.16.0",
     "babel-preset-stage-3": "6.17.0",
     "babel-register": "6.18.0",
+    "immutable": "3.8.1",
     "node-fetch": "1.6.3",
     "rethinkdb": "2.3.3"
   },
